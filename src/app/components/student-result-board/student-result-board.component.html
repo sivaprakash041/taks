@@ -1,0 +1,28 @@
+<div class="container">
+    <h1 class="text-center">Student Result Board</h1>
+
+    <div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+
+                    <th scope="col">Student Name </th>
+                    <th scope="col">Roll Number</th>
+                    <th scope="col">Total Marks</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of data">
+                    <th scope="row">{{i.name}}</th>
+                    <td>{{i.rollNumber}} </td>
+                    <td>{{i.total}} </td>
+                    <td>{{i.status }}</td>
+
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
